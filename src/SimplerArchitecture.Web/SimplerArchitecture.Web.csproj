@@ -122,7 +122,12 @@
     </Content>
     <Content Include="Views\Web.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\SimplerArchitecture\SimplerArchitecture.csproj">
+      <Project>{B9D3CE8B-0F64-4C5B-9B21-596D437DC29F}</Project>
+      <Name>SimplerArchitecture</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>

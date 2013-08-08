@@ -40,8 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\EmployeeBuilder.cs" />
+    <Compile Include="ControllerDownTests\EmployeeListControllerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimplerArchitecture\SimplerArchitecture.csproj">
+      <Project>{B9D3CE8B-0F64-4C5B-9B21-596D437DC29F}</Project>
+      <Name>SimplerArchitecture</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
