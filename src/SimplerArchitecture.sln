@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplerArchitecture.Web", "SimplerArchitecture.Web\SimplerArchitecture.Web.csproj", "{4FB32766-6BEC-4C61-8233-01596386670D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimplerArchitecture", "SimplerArchitecture\SimplerArchitecture.csproj", "{B9D3CE8B-0F64-4C5B-9B21-596D437DC29F}"
