@@ -80,6 +80,7 @@
     <Compile Include="Builders\EmployeeBuilder.cs" />
     <Compile Include="ControllerDownTests\ControllerDownTestBase.cs" />
     <Compile Include="ControllerDownTests\EmployeeListControllerFixture.cs" />
+    <Compile Include="Helpers\ActionResultExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,9 @@
-﻿using System.Web.Mvc;
+﻿using System.Linq;
+using System.Web.Mvc;
+using NHibernate.Linq;
+using SimplerArchitecture.Domain;
 using SimplerArchitecture.Infrastructure;
+using SimplerArchitecture.Web.Models;
 
 namespace SimplerArchitecture.Web.Controllers
 {
@@ -7,7 +11,17 @@ namespace SimplerArchitecture.Web.Controllers
 	{
 		public ActionResult List()
 		{
-			return null;
+			var employees = DatabaseSession.Query<Employee>()
+			                               .OrderBy(x => x.LastName)
+			                               .ToList();
+
+			var viewModels = employees.Select(x => new EmployeeListViewModel
+				{
+					Id = x.Id,
+					FullName = x.FirstName + " " + x.LastName
+				});
+
+			return View(viewModels);
 		}
 	}
 }
