@@ -31,7 +31,7 @@ namespace SimplerArchitecture.SlowTests.ControllerDownTests
 
 		protected override EmployeeListController buildController()
 		{
-			return new EmployeeListController();
+			return new EmployeeListController(); // pass in mocks of any needed dependencies
 		}
 	}
 }
